@@ -1,5 +1,11 @@
 package com.ds.stackandqueue;
 
+/**
+ * To create Simple queue
+ * To perform different operation on insertion elements
+ * @author sheetal
+ * @since 2021-08-21
+ */
 public class Queue {
 	//creating  of node 
 	Node front;
@@ -37,6 +43,17 @@ public class Queue {
 		 }
 		 return newNode;
 	}
+	
+	//delete the elements from Queue(Dequeue)
+	public void  dequeue() 
+	 {
+		int popData = 0;
+		if (front == null && rear==null) {
+				System.out.println("queue is empty");
+			}
+			 popData = front.data;
+			 front = front.next;	
+	 }
 	
 	// method to display Queue
 	public void print() 
