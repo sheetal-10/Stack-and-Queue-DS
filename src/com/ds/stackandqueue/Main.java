@@ -8,18 +8,11 @@ package com.ds.stackandqueue;
  */
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Welcome to stack and queue program");
-		StackQueue stackQueue=new StackQueue();
-		stackQueue.push(70);
-		stackQueue.push(30);
-		stackQueue.push(56);
-		stackQueue.print();
-		stackQueue.peek();
-		stackQueue.push(34);
-		stackQueue.print();
-		stackQueue.peek();
-		stackQueue.pop();
-		stackQueue.print();
-		
+		System.out.println("Welcome to queue program");
+		Queue queue=new Queue();
+		queue.enque(15);
+		queue.enque(16);
+		queue.enque(17);
+		queue.print();
 	}
 }
